@@ -1,0 +1,4 @@
+# Created at 2020-07-02T10:23:25.858
+Boot Manifest-JAR contains absolute paths in classpath 'H:\TeamProjects\Team2_RestAPI_Bootcamp_2020\Typicode\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

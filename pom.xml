@@ -10,7 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Generic</module>
-        <module>Twitter</module>
+        <module>Typicode</module>
+        <module>Twitter1</module>
     </modules>
 
     <properties>
