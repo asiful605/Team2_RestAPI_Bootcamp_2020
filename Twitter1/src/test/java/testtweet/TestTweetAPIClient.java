@@ -26,4 +26,5 @@ public class TestTweetAPIClient {
         String actualTweet=response.extract().body().path("text");
         Assert.assertEquals(tweet,actualTweet);
     }
+
 }
