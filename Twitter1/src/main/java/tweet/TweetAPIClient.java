@@ -1,6 +1,7 @@
 package tweet;
 
 import base.TwitterAPIClient;
+import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 
 import static io.restassured.RestAssured.given;
@@ -36,5 +37,17 @@ public class TweetAPIClient extends TwitterAPIClient {
                 .queryParam("id",tweetId)
                 .when().post(this.baseUri+this.DELETE_TWEET_ENDPOINT)
                 .then();
+    }
+
+    public Response sendTweet(String s) {
+        return null;
+    }
+
+    public Response searchProfile(String nafiszohaqa) {
+        return null;
+    }
+
+    public Response sentTweet(String s) {
+        return null;
     }
 }
