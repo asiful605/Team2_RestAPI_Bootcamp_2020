@@ -400,7 +400,7 @@ public class TestTweetAPIClient {
 
         request.body(json.toString());
 
-        Response response = request.put("http://localhost:207/posts/100");
+        Response response = request.put("https://twitter.com/home?lang=en");
         int code = response.getStatusCode();
         Assert.assertEquals(code,200);
 
@@ -408,7 +408,7 @@ public class TestTweetAPIClient {
     @Test
     public void deleteTweet(){
         RequestSpecification request = RestAssured.given();
-        Response response = request.delete("http://localhost:207/posts/27");
+        Response response = request.delete("http://localhost:207/posts/100");
         int code = response.getStatusCode();
         Assert.assertEquals(code,200);
     }
