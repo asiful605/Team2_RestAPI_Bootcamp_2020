@@ -2,7 +2,6 @@ package posts;
 
 import base.TypicodeAPIClient;
 import io.restassured.response.ValidatableResponse;
-
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
 
@@ -21,5 +20,4 @@ public class PostsAPIClient extends TypicodeAPIClient {
                       .post(this.baseUri + POSTS_ENDPOINT)
                       .then();
     }
-
 }

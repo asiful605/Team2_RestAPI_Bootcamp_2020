@@ -3,7 +3,7 @@
                                               
                               - After cloning the project please create a branch then work on the project
                               - Once ready to push your code please make sure to push it to your branch.
-                                     for example: git push origin your branch name
+                                     for example: git push origin your branch name.
                                      
                            
 This is known as a CRUD application. “CRUD” operations are very common. What is CRUD? Create, Read, Update and Delete 
