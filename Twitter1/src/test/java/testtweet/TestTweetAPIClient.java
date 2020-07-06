@@ -13,11 +13,9 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import tweet.TweetAPIClient;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.internal.matchers.IsCollectionContaining.hasItems;
@@ -230,7 +228,6 @@ public class TestTweetAPIClient {
                 then().
                 statusCode(200).log().all();
     }
-    // delete method
     @Test
     public void test_Case_Post_Delete(){
         given().
