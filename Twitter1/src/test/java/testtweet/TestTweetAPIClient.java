@@ -44,7 +44,7 @@ public class TestTweetAPIClient {
 
     @Test
     public void testUserCannnotTweetDuplicateTweet() {
-        Response response = tweetAPIClient.sentTweet("Hey!This is Shahana" + UUID.randomUUID());
+        Response response = tweetAPIClient.sentTweet("Hey!This is Tanjina" + UUID.randomUUID());
         response.getBody().prettyPrint();
         int statusCode = response.getStatusCode();
         String statusLine = response.getStatusLine();
@@ -54,7 +54,7 @@ public class TestTweetAPIClient {
 
     @Test
     public void testUserCanSearchProfileSuccessfully() {
-        Response response = tweetAPIClient.searchProfile("Luckmesh1");
+        Response response = tweetAPIClient.searchProfile("GloomyWar");
         response.getBody().prettyPrint();
         int statusCode = response.getStatusCode();
         String statusLine = response.getStatusLine();
@@ -64,7 +64,7 @@ public class TestTweetAPIClient {
 
     @Test
     public void testUser2CanSearchProfileSuccessfully() {
-        Response response = tweetAPIClient.searchProfile("Sneha@311");
+        Response response = tweetAPIClient.searchProfile("tanjina@311");
         response.getBody().prettyPrint();
         int statusCode = response.getStatusCode();
         String statusLine = response.getStatusLine();
@@ -101,11 +101,11 @@ public class TestTweetAPIClient {
     @Test(enabled = false)
     public void testUserFalseData(){
 //        Map<String,Object> map=new HashMap<>();
-//        map.put("name","shahana");
+//        map.put("name","tanjina");
 //        map.put("job","QA");
 //        System.out.println();
         JSONObject request = new JSONObject();
-        request.put("name","shahana");
+        request.put("name","tanjina");
         request.put("job","QA");
         System.out.println(request);
         given().
@@ -213,7 +213,7 @@ public class TestTweetAPIClient {
     @Test(enabled = false)
     public void test_Case_UserPost(){
         JSONObject request = new JSONObject();
-        request.put("name","shahana");
+        request.put("name","tanjina");
         request.put("job","QA");
         System.out.println(request);
         given().
@@ -300,7 +300,7 @@ public class TestTweetAPIClient {
     @Test
     public void testUserGet() {
         Map<String, Object> map = new HashMap<>();
-        map.put("name", "shahana");
+        map.put("name", "tanjina");
         map.put("job", "QA");
         System.out.println(map);
 
@@ -384,7 +384,7 @@ public class TestTweetAPIClient {
         JSONObject json = new JSONObject();
         json.put("id","100");
         json.put("title","java book");
-        json.put("author","sharmin");
+        json.put("author","Hamid");
 
         request.body(json.toString());
 
